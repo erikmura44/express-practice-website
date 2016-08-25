@@ -1,0 +1,78 @@
+<script>
+     jQuery('body').css('display','none');
+     jQuery(document).ready(function() {
+         jQuery('body').fadeIn();
+         jQuery('a').on('click',function(event){
+             var thetarget = this.getAttribute('target')
+             if (thetarget != "_blank"){
+                 var thehref = this.getAttribute('href')
+                 event.preventDefault();
+                 jQuery('body').fadeOut(function(){
+                     window.location = thehref
+                 });
+             }
+         });
+     });
+        setTimeout(function(){
+         jQuery('body').fadeIn();
+     },1000)
+</script>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="http://individual.icons-land.com/IconsPreview/3D-Food/PNG/16x16/Alcohol_Beer_LightBeer.png"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="aboutme">About me</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li class="active"><a href="portfolio">Portfolio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="content"> <!---start of content area--->
+    <div id="about-p-0">
+         <h1>Me</h1>
+         <h3>I am_</h3>
+    </div>
+
+    <div class="group">
+        <div class="left">
+            <img src="images/project-one.png" alt="project one" /><!--- 514x342 image size --->
+            <p id="portfolio-captions">Lorem Ipsum</p>
+        </div>
+        <div class="right">
+            <img src="images/project-two.jpg" alt="project two" />
+            <p id="portfolio-captions">Lorem Ipsum</p>
+        </div>
+        <div class="left">
+            <img src="images/project-three.jpg" alt="project three" />
+            <p id="portfolio-captions">Lorem Ipsum</p>
+        </div>
+        <div class="right">
+           <img src="images/project-four.jpg" alt="project four" />
+           <p id="portfolio-captions">Lorem Ipsum</p>
+       </div>
+   </div>
+
+
+
+<footer>
+    <div class="nav-bottom">
+        <div class="copyright">&copy; 2016 E Mura LLC</div>
+        <div id="signature"><h4>Erik Mura</h4></div>
+    </div>
+</footer>
+
+
+
+</div><!--- end of content area --->

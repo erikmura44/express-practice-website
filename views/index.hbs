@@ -1,0 +1,30 @@
+<script>
+	jQuery('body').css('display','none');
+	jQuery(document).ready(function() {
+		jQuery('body').fadeIn();
+		jQuery('a').on('click',function(event){
+			var thetarget = this.getAttribute('target')
+			if (thetarget != "_blank"){
+				var thehref = this.getAttribute('href')
+				event.preventDefault();
+				jQuery('body').fadeOut(function(){
+					window.location = thehref
+				});
+			}
+		});
+	});
+    	setTimeout(function(){
+		jQuery('body').fadeIn();
+	},4000)
+</script>
+
+<div id="enter" onclick="location.href='aboutme';" style="cursor:pointer;">
+  <header class="landing">
+      <div class="landing_info">
+          <h1><a href="aboutme"><img src="images/logo.png" onmouseover="this.src='images/logo_bw.png'" onmouseout="this.src='images/logo.png'" /></a></h1>
+          <h2>Erik Mura</h2>
+          <h4>husband . brother . developer</h4>
+          <h5>[    Enter    ]</h5>
+      </div>
+  </header>
+</div>

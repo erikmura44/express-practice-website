@@ -1,0 +1,76 @@
+<script>
+jQuery('body').css('display','none');
+jQuery(document).ready(function() {
+    jQuery('body').fadeIn();
+    jQuery('a').on('click',function(event){
+        var thetarget = this.getAttribute('target')
+        if (thetarget != "_blank"){
+        var thehref = this.getAttribute('href')
+        event.preventDefault();
+    jQuery('body').fadeOut(function(){
+        window.location = thehref
+            });
+        }
+    });
+});
+setTimeout(function(){
+    jQuery('body').fadeIn();
+},1000)
+</script>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="http://individual.icons-land.com/IconsPreview/3D-Food/PNG/16x16/Alcohol_Beer_LightBeer.png"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li class="active"><a href="aboutme">About me</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li><a href="portfolio">Portfolio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="content"><!---start with content--->
+    <div id="about-p-0">
+        <h1>Me</h1>
+        <h3>I am_</h3>
+    <div id="about-p-1">
+        <h3>Colorado local. California native_</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum faucibus augue nec consequat. Sed nec tortor sit amet justo malesuada malesuada porta id tortor. Phasellus in bibendum felis, nec varius augue. Aliquam erat volutpat. Suspendisse ullamcorper sagittis ex in aliquam. Sed turpis est, vulputate ut nunc quis, consequat pellentesque massa. Etiam ultricies enim eget sapien fermentum vehicula. Praesent a consectetur mauris. Aenean tristique mauris at lectus blandit mollis. Maecenas semper tristique tincidunt. Vivamus felis ipsum, cursus scelerisque ligula efficitur, porta blandit nunc. Sed urna enim, efficitur eget porta eget, interdum quis ipsum.</p>
+    </div>
+    </div>
+
+    <div id="about-p-2">
+        <h3>Full of past skills_</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum faucibus augue nec consequat. Sed nec tortor sit amet justo malesuada malesuada porta id tortor. Phasellus in bibendum felis, nec varius augue. Aliquam erat volutpat. Suspendisse ullamcorper sagittis ex in aliquam. Sed turpis est, vulputate ut nunc quis, consequat pellentesque massa. Etiam ultricies enim eget sapien fermentum vehicula. Praesent a consectetur mauris. Aenean tristique mauris at lectus blandit mollis. Maecenas semper tristique tincidunt. Vivamus felis ipsum, cursus scelerisque ligula efficitur, porta blandit nunc. Sed urna enim, efficitur eget porta eget, interdum quis ipsum.</p>
+    </div>
+
+    <div id="about-p-3">
+        <h3>From_</h3>
+            <p>Aliquam pellentesque efficitur pretium. Nam sodales quam metus, non vestibulum metus tincidunt vitae. Ut vehicula cursus odio, sollicitudin lacinia massa tristique ac. Aenean blandit libero eu ultricies elementum. Ut lacinia, nulla eu mattis mollis, tortor mauris mollis eros, quis sodales massa dolor at ligula. Morbi venenatis nulla quis dui tristique, in mattis turpis efficitur. Ut id malesuada magna, vitae interdum ex. Vivamus laoreet imperdiet purus, in elementum nulla. Maecenas tempus tellus enim, sit amet aliquet turpis eleifend vitae. Praesent non tempor neque. Morbi porta viverra enim sit amet condimentum. Aliquam felis odio, porta a est a, commodo elementum lorem. Morbi diam nisi, facilisis ac rhoncus aliquet, sollicitudin et erat. Aliquam gravida nisi arcu, sed laoreet nisi gravida ornare. Sed ac pellentesque augue.</p>
+    </div>
+
+
+    <div id="about-photo">
+       <img src="images/me.jpg" alt="me">
+    </div>
+
+
+<footer>
+    <div class="nav-bottom">
+        <div class="copyright">&copy; 2016 E Mura LLC</div>
+        <div id="signature"><h4>Erik Mura</h4></div>
+    </div>
+</footer>
+
+
+</div><!--- end of content --->

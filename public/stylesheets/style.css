@@ -1,0 +1,277 @@
+/*
+  ========================================
+  Landing Page
+  ========================================
+*/
+.landing {
+    background-image: url("../images/landings.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+.landing a:link {
+    color: white;
+    text-decoration: none;
+}
+.landing a:visited {
+    color: white;
+}
+.landing a:hover {
+    color: white;
+}
+.landing_info h1 {
+    color: white;
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: none;
+    margin: 0;
+    padding-top: 25vh;
+}
+.landing_info h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.landing_info h4 {
+    color: white;
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: none;
+    margin: 0;
+    font-size: 0.7em;
+}
+.landing_info h5 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;;
+    text-decoration: none;
+    margin: 0;
+    font-size: 0.7em;
+    padding-top: 50px;
+    letter-spacing: 5px;
+}
+/*
+  ========================================
+  Main and NAV
+  ========================================
+*/
+.header-content {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    margin: 0px;
+    background-color: white;
+}
+.nav-bottom {
+    margin: 25px auto;
+    background-color: white;
+    list-style-type: none;
+    text-align: left;
+    background-size: 80% 80%;
+    border-top: 1px dotted #268bd2;
+    padding:0;
+}
+.header {
+    height: auto;
+    border-bottom: 1px solid #268bd2;
+    border-top: 1px solid #268bd2;
+    width: 60%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 3px;
+}
+.content {
+    width: 70%;
+    height: auto;
+    margin: 150px auto;
+}
+.navbar .navbar-inverse ul {
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+    padding: 0;
+}
+body {
+  text-align: center;
+  font-size:1.5em;
+  font-weight:400;
+  font-family:"Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  font: 20pt;
+  color:#222222;
+}
+hr {
+  height: 2px;
+  color: #ffcc99;
+}
+p {
+  font-size: 0.8em;
+  text-align: left;
+  color: #2f2d2d;
+}
+/*
+  ========================================
+  About Me Page Setup
+  ========================================
+*/
+#about-p-0 h1 {
+    text-align: left;
+    color: #5C9EAD;
+}
+#about-p-0 h3 {
+    text-align: left;
+}
+#about-p-2 {
+    border: 1px solid #91F9E5;
+    padding: 20px;
+    margin: 0px -20px 0px -20px;
+}
+#about-p-2 h3 {
+    text-align: left;
+}
+#about-p-3 h3 {
+    text-align: left;
+}
+#about-photo img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width:100%;
+    padding-top: 20px;
+    height: auto;
+}
+/*
+  ========================================
+  Portfolio
+  ========================================
+*/
+.left {
+    float: left;
+    width: 45%;
+    padding-left: 20px;
+}
+.right {
+    float: right;
+    width: 45%;
+    padding-right: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.group:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 480px) {
+    .left, .right {
+        float: none;
+        width: auto;
+    }
+}
+#portfolio-captions {
+    text-align: center;
+}
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+.copyright {
+    z-index: 100;
+    bottom: 2em;
+    left: 2em;
+    width: 25%;
+    text-decoration: none;
+    font-size: 1.0vw;
+    margin-top: 20px;
+    display: inline-block;
+    float: left;
+}
+#signature h4 {
+        font-family: 'Homemade Apple', cursive;
+        width: 25%;
+        float: right;
+        display: inline-block;
+        margin-top: 20px;
+        text-align: right;
+        font-size: 1.3vw;
+}
+/*
+  ========================================
+  Contact
+  ========================================
+*/
+
+form {
+	width:auto;
+	margin:0 auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 15px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+label {
+	display:block;
+	margin-top:20px;
+	letter-spacing:2px;
+}
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+
+textarea {
+	height:213px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#submit {
+	background-color: #268bd2;
+    color: white;
+	width:127px;
+	height:45px;
+	border:none;
+	margin-top:20px;
+	cursor:pointer;
+}
+#submit:hover {
+		opacity:0.7;
+}
+input, textarea,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    font-size: 12px;
+}
+.output {
+    color: red;
+    margin-top: 20px;
+}

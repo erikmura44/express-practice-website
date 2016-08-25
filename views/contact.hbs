@@ -1,0 +1,73 @@
+<script>
+     jQuery('body').css('display','none');
+     jQuery(document).ready(function() {
+         jQuery('body').fadeIn();
+         jQuery('a').on('click',function(event){
+             var thetarget = this.getAttribute('target')
+             if (thetarget != "_blank"){
+             var thehref = this.getAttribute('href')
+             event.preventDefault();
+         jQuery('body').fadeOut(function(){
+             window.location = thehref
+                 });
+             }
+         });
+     });
+     setTimeout(function(){
+         jQuery('body').fadeIn();
+     },1000)
+</script>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="http://individual.icons-land.com/IconsPreview/3D-Food/PNG/16x16/Alcohol_Beer_LightBeer.png"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="aboutme">About me</a></li>
+        <li class="active"><a href="contact">Contact</a></li>
+        <li><a href="portfolio">Portfolio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="content"> <!---start of content area--->
+    <div id="about-p-0">
+        <h1>Contact Me</h1>
+        <h3>details_</h3>
+    </div>
+
+    <div class="output">
+        <span id="output"></span>
+    </div>
+
+    <form>
+        <label for="name" class="name">Name</label>
+        <input name="name" placeholder="John Doe" class="name" required>
+        <label for="email" class="email">Email</label>
+        <input name="email" type="email" placeholder="john@doe.io" class="email" required>
+        <label for="hidden" class="message">Message</label>
+        <textarea name="hidden" placeholder="Leave your message" class="message" required></textarea>
+        <input id="submit" name="submit" type="submit" value="Submit">
+    </form>
+
+
+
+<footer>
+    <div class="nav-bottom">
+        <div class="copyright">&copy; 2016 E Mura LLC</div>
+        <div id="signature"><h4>Erik Mura</h4></div>
+    </div>
+</footer>
+
+
+</div><!--- end of content area --->
