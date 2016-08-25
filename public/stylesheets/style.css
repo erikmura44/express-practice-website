@@ -96,12 +96,28 @@
     height: auto;
     margin: 150px auto;
 }
-.navbar .navbar-inverse ul {
+.navbar-custom {
+    background-color:#ffffff;
+    color:#268bd2;
+    border-radius:0;
+    text-align: center;
+}
+.navbar-custom .navbar-nav > li > a {
+    color:#268bd2;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+    color: #268bd2;
+    background-color:transparent;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.nav > li > a:focus {
     text-decoration: none;
-    list-style: none;
-    display: inline;
-    margin-left: 50px;
-    padding: 0;
+    background-color: #d9efff;
+}
+.icon-bar {
+    background-color: #268bd2;
 }
 body {
   text-align: center;
